@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+*{
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+body {
+  font-size: 15pt;
+}
+#header{
+  background: #3b8;
+  box-shadow: 6px 4px 0px #4d9;
+  border-radius: 8px;
+  position: fixed;
+  width: 100%-4px;
+  left: 4px;
+  top: 4px;
+  right: 4px;
+  height: 45px;
+  z-index: 10;
+}
+.head-text{
+  color: #fff;
+  font-size: 32px;
+  font-family: "Lalezar",sans-serif;
+  font-weight: bold;
+  margin-left: 24px;
+}
+#content{
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+h1{
+  font-size: 8vw;
+  font-family: "Lalezar",sans-serif;
+  margin-bottom: 8px;
+  /*text-shadow: 2px 1px 0px #ca2;*/
+}
+h2 {
+  font-family: "Lalezar", sans-serif;
+  margin-bottom: 8px;
+  font-size: 32px;
+  /*text-shadow: 2px 1px 0px #ca2;*/
+}
+.cw{
+  color: #fff;
+}
+.c0c6{
+  color: #3b8;
+}
+.c3f9 {
+  color: #4d9;
+}
+.cent{
+  text-align: center;
+}
+a{
+  color: #ce4;
+  text-decoration: none;
+}
+a:hover,a:focus{
+  text-decoration: underline;
+}
+.it{
+  font-style: italic;
+}
+.btn{
+  background: #3b8;
+  padding: 8px 24px 4px 24px;
+  color: #fff;
+  font-family: "Lalezar", sans-serif;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+.btn:hover,.btn:focus{
+  background: #4d9;
+}
+#ctext{
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+}
+#box{
+  padding: 40px 30px;
+  font-family: "Syne",sans-serif;
+}
+#box-head {
+  padding: 36vh 30px;
+  height: 28vh;
+  font-family: "Syne", sans-serif;
+  background: #256;
+  color: #fff;
+}
+hr{
+  background: #4d9;
+  width: auto;
+  height: 4px;
+  border: none;
+  margin: 0 0;
+}
+#end {
+  background: #256;
+  color: #fff;
+  padding: 40px 30px;
+  margin-top: 60px;
+  font-family: "Syne", sans-serif;
+}
+@media only screen and (min-width: 800px){
+  #box{
+    padding: 40px 60px;
+  }
+  #end{
+    padding: 40px 60px;
+  }
+}
