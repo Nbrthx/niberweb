@@ -1,18 +1,18 @@
-const express = require("express")
+const express = require('express')
 const app = express()
 const path = require('path')
 const router = express.Router()
 
 router.get('/',function(req,res){
-  res.sendFile(express.static(path.join(__dirname+'/index.html')));
+  res.sendFile('index.html');
   //__dirname : It will resolve to your project folder.
 });
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //add the router
 app.use('/', router);
 
 app.listen(1274, () => {
-  console.log("Listening at 1274")
+  console.log('Listening at 1274')
 })
