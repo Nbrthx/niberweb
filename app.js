@@ -11,6 +11,6 @@ router.get('/',function(req,res){
 //add the router
 app.use('/', router);
 
-app.listen(80, () => {
-  console.log("Listening at 80")
+app.listen(1274, () => {
+  console.log("Listening at 1274")
 })
