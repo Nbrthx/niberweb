@@ -10,5 +10,5 @@ app.get('/',(req,res) => {
 });
 
 app.listen(1274, () => {
-  console.log('Listening at 1274')
+  console.log('Listening at port 1274')
 })
