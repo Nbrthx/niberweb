@@ -4,7 +4,7 @@ const path = require('path')
 const port = process.env.PORT || 3000
 
 app.get('/',(req,res) => {
-  res.sendFile(__dirname+'/index.html');
+  res.sendFile(__dirname+'/public/index.html');
   //__dirname : It will resolve to your project folder.
 });
 
