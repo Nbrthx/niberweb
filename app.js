@@ -6,9 +6,8 @@ const { Pool, Client } = require('pg')
 
 const dburl = process.env.DATABASE_URL
 
-var pg
-Client.connect(dburl, function(err, c) {
-  pg = c
+const pg = Pool(
+  connectionString: dburl
 });
 console.log(pg.query("SELECT count FROM counter"))
 
