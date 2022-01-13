@@ -4,11 +4,11 @@ const path = require('path')
 const port = process.env.PORT || 3000
 const { Pool } = require('pg')
 const pool = new Pool({
-  user: secrets.PGUSER,
-  host: secrets.PGHOST,
-  database: secrets.PGDB,
-  password: secrets.PGPASS,
-  port: secrets.PGPORT
+  user: ${{secrets.PGUSER}},
+  host: ${{secrets.PGHOST}},
+  database: ${{secrets.PGDB}},
+  password: ${{secrets.PGPASS}},
+  port: ${{secrets.PGPORT}}
 })
 
 pool.query('SELECT NOW()', (err, res) => {
