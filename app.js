@@ -4,6 +4,8 @@ const path = require('path')
 const port = process.env.PORT || 3000
 const { Pool, Client } = require('pg')
 
+console.log(process.env)
+
 const pool = new Pool({
   user: process.env.PGUSER,
   host: process.env.PGHOST,
