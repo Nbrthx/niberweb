@@ -4,7 +4,8 @@
   "description": "Just Website with NodeJS",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^8.7.1"
   },
   "devDependencies": {},
   "scripts": {
