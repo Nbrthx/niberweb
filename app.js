@@ -2,19 +2,19 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const port = process.env.PORT || 3000
-const pg = require('pg')
+const { Pool, Client } = require('pg')
 
 const dburl = process.env.DATABASE_URL
 
-var client
-pg.connect(dburl, function(err, c) {
-  client = c
+var pg
+Client.connect(dburl, function(err, c) {
+  pg = c
 });
-console.log(client.query("SELECT count FROM counter"))
+console.log(pg.query("SELECT count FROM counter"))
 
-client.query('SELECT NOW()', (err, res) => {
+pg.query('SELECT NOW()', (err, res) => {
   console.log(err, res) 
-  client.end() 
+  pg.end() 
 })
 
 
