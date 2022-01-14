@@ -11,13 +11,22 @@ const pg = new Pool({
   ssl: { rejectUnauthorized: false }
 });
 
+var count = 0
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use('views', path.join(__dirname, 'public'))
+app.use('view engine', 'ejs')
+
+pg.query('SELECT count FROM counter WHERE id=1', (err, res) => {
+  count = count+res
+  pg.end() 
+})
 
 app.get('/',(req,res) => {
-  res.sendFile(__dirname+'/index.html');
+  count++;
+  res.render('index',{count});
+  count--;
   pg.query('UPDATE counter SET count=count+1 where id=1', (err, res) => {
-    console.log(err, res)
     pg.end() 
   })
 });
