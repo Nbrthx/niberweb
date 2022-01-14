@@ -19,6 +19,7 @@ app.set('view engine', 'ejs')
 
 async function rquery(que){
   var res = await pool.query(que)
+  console.log(res)
   return res.rows
 }
 
