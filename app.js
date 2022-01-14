@@ -6,7 +6,7 @@ const { Pool, Client } = require('pg')
 
 const dburl = process.env.DATABASE_URL
 
-const pg = new Pool({
+const pool = new Pool({
   connectionString: dburl,
   ssl: { rejectUnauthorized: false }
 });
@@ -17,16 +17,16 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
-pg.query('SELECT count FROM counter WHERE id=1', (err, res) => {
-  console.log(res.rows[0].count)
-  count = count+res.rows[0].count
-})
-
 app.get('/',(req,res) => {
+  pool.query('SELECT count FROM counter WHERE id=1', (err, res) => {
+    console.log(res.rows[0].count)
+    count = count+res.rows[0].count
+  })
+
   count++;
   res.render('index',{ count: count });
   count--;
-  pg.query('UPDATE counter SET count=count+1 where id=1')
+  pool.query('UPDATE counter SET count=count+1 where id=1')
 });
 
 app.listen(port, () => {
