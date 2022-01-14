@@ -14,8 +14,8 @@ const pg = new Pool({
 var count = 0
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.use('views', path.join(__dirname, 'public'))
-app.use('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'public'))
+app.set('view engine', 'ejs')
 
 pg.query('SELECT count FROM counter WHERE id=1', (err, res) => {
   count = count+res
