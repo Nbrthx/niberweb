@@ -21,15 +21,10 @@ app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
   pool.query("SELECT count FROM counter WHERE id=1")
-    .then(row =>
+    .then(row => {
       count = row.rows[0].count
       res.render('index',{ count: count })
-    )
-    .catch(err =>
-      setImmediate(() => {
-        throw err
-      })
-    )
+    })
 });
 
 app.listen(port, () => {
