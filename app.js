@@ -22,7 +22,7 @@ async function rquery(que){
   return res
 }
 
-app.get('/', async (req,res) => {
+app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
   count = rquery("SELECT count FROM counter WHERE id=1").rows[0].count
