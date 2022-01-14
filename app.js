@@ -10,19 +10,16 @@ const pg = new Pool({
   connectionString: dburl,
   ssl: { rejectUnauthorized: false }
 });
-console.log(pg.query("SELECT count FROM counter"))
-
-pg.query('SELECT NOW()', (err, res) => {
-  console.log(err, res) 
-  pg.end() 
-})
 
 
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/',(req,res) => {
   res.sendFile(__dirname+'/index.html');
-  //__dirname : It will resolve to your project folder.
+  pg.query('UPDATE counter SET count=count+1 where id=1', (err, res) => {
+    console.log(err, res)
+    pg.end() 
+  })
 });
 
 app.listen(port, () => {
