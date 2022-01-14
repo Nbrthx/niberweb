@@ -22,10 +22,11 @@ app.get('/', (req,res) => {
 
   try {
     const row = await pool.query("SELECT count FROM counter WHERE id=1")
+    count = row.rows[0].count
   } catch (err) {
     console.log(err.stack)
   }
-  count = row.rows[0].count
+  
   res.render('index',{ count: count });
   
 });
