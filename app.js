@@ -18,15 +18,11 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('/',(req,res) => {
-  pool.query('SELECT count FROM counter WHERE id=1', (err, res) => {
-    console.log(res.rows[0].count)
-    count = count+res.rows[0].count
-  })
-
-  count++;
-  res.render('index',{ count: count });
-  count--;
   pool.query('UPDATE counter SET count=count+1 where id=1')
+
+  count = pool.query('SELECT count FROM counter WHERE id=1').rows[0].count
+
+  res.render('index',{ count: count });
 });
 
 app.listen(port, () => {
