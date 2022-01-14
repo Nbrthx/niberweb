@@ -19,13 +19,13 @@ app.set('view engine', 'ejs')
 
 async function rquery(que){
   var res = await pool.query(que)
-  return res
+  return res.rows
 }
 
 app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
-  count = rquery("SELECT count FROM counter WHERE id=1").rows[0].count
+  count = rquery("SELECT count FROM counter WHERE id=1")[0].count
 
   res.render('index',{ count: count });
 });
