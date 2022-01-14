@@ -19,16 +19,13 @@ app.set('view engine', 'ejs')
 
 pg.query('SELECT count FROM counter WHERE id=1', (err, res) => {
   count = count+res
-  pg.end() 
 })
 
 app.get('/',(req,res) => {
   count++;
   res.render('index',{ count: count });
   count--;
-  pg.query('UPDATE counter SET count=count+1 where id=1', (err, res) => {
-    pg.end() 
-  })
+  pg.query('UPDATE counter SET count=count+1 where id=1')
 });
 
 app.listen(port, () => {
