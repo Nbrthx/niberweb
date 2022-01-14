@@ -17,18 +17,13 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
-function rquery(que,val){
-  pool.query(que,(err,res) => {
-    return res.rows[0][val]
-  })
-}
-
 app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
-  count = rquery("SELECT count FROM counter WHERE id=1", count)
-
-  res.render('index',{ count: count });
+  pool.query("SELECT count FROM counter WHERE id=1", (err, res) => {
+    count = res.rows[0].count
+    res.render('index',{ count: count });
+  })
 });
 
 app.listen(port, () => {
