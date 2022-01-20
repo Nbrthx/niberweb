@@ -18,9 +18,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.get('*', (req, res) => {
-  if(req.protocol == "http")
+  if(req.protocol === "http")
     res.redirect('https://' + req.headers.host + req.url);
-  else return;
 })
 
 app.get('/', (req,res) => {
