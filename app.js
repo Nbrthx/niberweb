@@ -17,8 +17,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
-app.get('*', (req, res) => {  
-  res.redirect('https://' + req.headers.host + req.url);
+app.get('*', (req, res) => {
+  if(!req.secure){
+    res.redirect('https://' + req.headers.host + req.url);
+  }
 })
 
 app.get('/', (req,res) => {
