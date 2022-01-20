@@ -20,7 +20,7 @@ app.set('view engine', 'ejs')
 function gp(p){
   if(req.protocol === "http")
     res.redirect('https://' + req.headers.host + req.url);
-})
+}
 
 app.get('/', (req,res) => {
   gp(req.protocol)
