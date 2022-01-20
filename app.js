@@ -17,13 +17,13 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
-function gp(p){
+function gp(p, res){
   if(req.protocol === "http")
     res.redirect('https://' + req.headers.host + req.url);
 }
 
 app.get('/', (req,res) => {
-  gp(req.protocol)
+  gp(req.protocol, res)
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
   pool.query("SELECT count FROM counter WHERE id=1")
