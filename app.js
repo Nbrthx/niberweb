@@ -17,6 +17,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
+app.get('*', (req, res) => {  
+  res.redirect('https://' + req.headers.host + req.url);
+})
+
 app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
@@ -26,10 +30,6 @@ app.get('/', (req,res) => {
       res.render('index',{ count: count })
     })
 });
-
-app.get('*', (req, res) => {  
-    res.redirect('https://' + req.headers.host + req.url);
-})
 
 app.listen(port, () => {
   console.log('Listening at '+port)
