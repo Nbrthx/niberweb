@@ -27,6 +27,10 @@ app.get('/', (req,res) => {
     })
 });
 
+app.get('*', (req, res) => {  
+    res.redirect('https://' + req.headers.host + req.url);
+})
+
 app.listen(port, () => {
   console.log('Listening at '+port)
 }, app.settings.env)
