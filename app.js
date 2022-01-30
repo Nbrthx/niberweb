@@ -20,9 +20,9 @@ app.set('view engine', 'ejs')
 app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
-  pool.query("SELECT count FROM counter WHERE id=1", (row, err) => {
+  pool.query("SELECT * FROM counter WHERE id=1", (row, err) => {
     count = row
-    console.log(count)
+    console.log(row)
     res.render('index',{ count: count })
   })
 });
