@@ -111,9 +111,9 @@ hr{
 }
 @media only screen and (min-width: 800px){
   #box{
-    padding: 60px 80px;
+    padding: 60px 40px;
   }
   #end{
-    padding: 60px 80px;
+    padding: 60px 40px;
   }
 }
