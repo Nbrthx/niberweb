@@ -22,6 +22,7 @@ app.get('/', (req,res) => {
 
   pool.query("SELECT count FROM counter WHERE id=1", (row, err) => {
     count = row
+    console.log(count)
     res.render('index',{ count: count })
   })
 });
