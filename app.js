@@ -21,7 +21,7 @@ app.get('/', (req,res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
 
   pool.query("SELECT count FROM counter WHERE id=1", (row, err) => {
-    count = row.rows[0].count
+    count = row
     res.render('index',{ count: count })
   })
 });
