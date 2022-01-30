@@ -7,9 +7,7 @@
   bottom: 0;
   right: 0;
 }
-body {
-  font-size: 15pt;
-}
+body {}
 #header{
   background: #3b8;
   box-shadow: 6px 4px 0px #4d9;
@@ -87,14 +85,14 @@ a:hover,a:focus{
   margin-top: 30px;
 }
 #box{
-  padding: 40px 30px;
+  padding: 120px 100px;
   font-family: "Syne",sans-serif;
 }
 #box-head {
   padding: 36vh 30px;
   height: 28vh;
   font-family: "Syne", sans-serif;
-  background: #236;
+  background: #235;
   color: #fff;
 }
 hr{
@@ -105,17 +103,17 @@ hr{
   margin: 0 0;
 }
 #end {
-  background: #236;
+  background: #235;
   color: #fff;
-  padding: 40px 30px;
+  padding: 120px 100px;
   margin-top: 60px;
   font-family: "Syne", sans-serif;
 }
 @media only screen and (min-width: 800px){
   #box{
-    padding: 40px 60px;
+    padding: 80px 60px;
   }
   #end{
-    padding: 40px 60px;
+    padding: 80px 60px;
   }
 }
