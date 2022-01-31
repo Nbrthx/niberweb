@@ -85,7 +85,7 @@ a:hover,a:focus{
   margin-top: 30px;
 }
 #box{
-  padding: 40px 120px;
+  padding: 40px 50px;
   font-family: "Syne",sans-serif;
 }
 #box-head {
@@ -105,15 +105,15 @@ hr{
 #end {
   background: #235;
   color: #fff;
-  padding: 40px 120px;
+  padding: 40px 50px;
   margin-top: 60px;
   font-family: "Syne", sans-serif;
 }
 @media only screen and (min-width: 800px){
   #box{
-    padding: 40px 30px;
+    padding: 40px 120px;
   }
   #end{
-    padding: 40px 30px;
+    padding: 40px 120px;
   }
 }
