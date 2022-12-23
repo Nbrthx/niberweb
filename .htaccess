@@ -1,3 +1,0 @@
-RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-RewriteCond %{THE_REQUEST} \s/+user/(login|register|profile|captcha) [NC]
-RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301,NE]
