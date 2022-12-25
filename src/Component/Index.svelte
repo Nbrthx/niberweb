@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Niberthix</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="header">
+<script>
+    import "style.css"
+    
+    var count = 0
+    
+    fetch("api/getcount")
+    .then(res => res.json())
+    .then(data => {
+        count = data.count
+    })
+    
+    fetch("api/addcount")
+</script>
+
+<div id="header">
     <label class="head-text">Niberthix</label>
   </div>
   <div id="content">
@@ -40,9 +44,8 @@
     Instagram: <a href="https://instagram.com/nbrthx">@niberthix</a><br>
     Github: <a href="https://github.com/Nbrthx">Nbrthx</a>
     <br>
-    visitor: <b><%= count %></b>
+    visitor: <b>{count}</b>
     <div id="ctext">© No Copyright</div>
   </div>
-  <script src="main.js"></script>
 </body>
 </html>

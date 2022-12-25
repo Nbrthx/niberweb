@@ -14,17 +14,19 @@ const pool = new Pool({
 var count = 0
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
+app.get('api/addcount', (req, res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
-
+})
+app.get("api/getcount", (req, res) => {
   pool.query("SELECT count FROM counter WHERE id=1", (err, row) => {
     count = row.rows[0].count
-    res.render('index',{ count: count })
+    res.json({ count: count })
   })
 });
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname,"/public/index.html"))
+})
 
 app.listen(port, () => {
   console.log('Listening at '+port)
