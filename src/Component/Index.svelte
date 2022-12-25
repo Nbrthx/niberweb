@@ -13,39 +13,37 @@
 </script>
 
 <div id="header">
-    <label class="head-text">Niberthix</label>
-  </div>
-  <div id="content">
-    <div id="box-head">
-      <h1 class="c3f9 cent">Hello World</h1>
-      <p class="cent">
-        Sometimes in boarding school.<br>
-      I am create this website just for fun.
-      <p>
-    </div>
-    <hr>
-    <div id="box">
-      <h2>Paragraph 1</h2>
-      In here, i'm just bored and type some word at this website space, nothing in here.
-    </div>
-    <div id="box">
-      <h2>Paragraph 2</h2>
-      This web design has created by Spck editor on android. Yea, i am created this website with android.
-    </div>
-    <div id="box">
-      <h2>Paragraph 3</h2>
-      Want to see a button design, look down.<br>
-      <input type="button" class="btn" value="Nothing in here">
-    </div>
-  </div>
-  <div id="end">
-    <h2 class="c3f9">Contact</h2>
-    Youtube: <a href="https://youtube.com/@nbrthx">Niberthix</a><br>
-    Instagram: <a href="https://instagram.com/nbrthx">@niberthix</a><br>
-    Github: <a href="https://github.com/Nbrthx">Nbrthx</a>
-    <br>
-    visitor: <b>{count}</b>
-    <div id="ctext">© No Copyright</div>
-  </div>
-</body>
-</html>
+        <label class="head-text">Niberthix</label>
+      </div>
+      <div id="content">
+        <div id="box-head">
+          <h1 class="c3f9 cent">Hello World</h1>
+          <p class="cent">
+            Sometimes in boarding school.<br>
+          I am create this website just for fun.
+          <p>
+        </div>
+        <hr>
+        <div id="box">
+          <h2>Paragraph 1</h2>
+          In here, i'm just bored and type some word at this website space, nothing in here.
+        </div>
+        <div id="box">
+          <h2>Paragraph 2</h2>
+          This web design has created by Spck editor on android. Yea, i am created this website with android.
+        </div>
+        <div id="box">
+          <h2>Paragraph 3</h2>
+          Want to see a button design, look down.<br>
+          <input type="button" class="btn" value="Nothing in here">
+        </div>
+      </div>
+      <div id="end">
+        <h2 class="c3f9">Contact</h2>
+        Youtube: <a href="https://youtube.com/@nbrthx">Niberthix</a><br>
+        Instagram: <a href="https://instagram.com/nbrthx">@niberthix</a><br>
+        Github: <a href="https://github.com/Nbrthx">Nbrthx</a>
+        <br>
+        visitor: <b>{count}</b>
+        <div id="ctext">© No Copyright</div>
+      </div>
