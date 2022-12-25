@@ -10,9 +10,8 @@
         .then(data => {
             count = data.count
         })
+        fetch("api/addcount")
     })
-    
-    fetch("api/addcount")
 </script>
 
 <div id="header">
