@@ -1,6 +1,6 @@
 <script>
     import "./style.css"
-    import { onMount } import "svelte"
+    import { onMount } from "svelte"
     
     var count = 0
     
