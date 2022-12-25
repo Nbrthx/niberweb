@@ -1,12 +1,15 @@
 <script>
     import "./style.css"
+    import { onMount } import "svelte"
     
     var count = 0
     
-    fetch("api/getcount")
-    .then(res => res.json())
-    .then(data => {
-        count = data.count
+    onMount(() => {
+        fetch("api/getcount")
+        .then(res => res.json())
+        .then(data => {
+            count = data.count
+        })
     })
     
     fetch("api/addcount")
