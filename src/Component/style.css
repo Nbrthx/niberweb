@@ -81,8 +81,13 @@ a:hover,a:focus{
 }
 #pp{
   background-image: url("https://iili.io/HhcGLLN.png");
+  background-size: 100px;
+  background-position: 0 144px;
   width: 100px;
   height: 100px;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
 }
 #ctext{
   font-style: italic;
