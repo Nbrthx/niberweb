@@ -19,10 +19,11 @@
       </div>
       <div id="content">
         <div id="box-head">
+          <div class="cent" id="pp"></div>
           <h1 class="c3f9 cent">Hello World</h1>
           <p class="cent">
-            Sometimes in boarding school.<br>
-          I am create this website just for fun.
+            This is portofolio of<br>
+          Ektada.
           <p>
         </div>
         <hr>
@@ -43,7 +44,6 @@
       <div id="end">
         <h2 class="c3f9">Contact</h2>
         Youtube: <a href="https://youtube.com/@nbrthx">Niberthix</a><br>
-        Instagram: <a href="https://instagram.com/nbrthx">@niberthix</a><br>
         Github: <a href="https://github.com/Nbrthx">Nbrthx</a>
         <br>
         visitor: <b>{count}</b>
