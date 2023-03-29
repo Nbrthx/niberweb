@@ -100,6 +100,9 @@ src="https://youtube.com/embed/_J7HDoxADis">
           <b>Thanks For Visiting</b>
           
         </div>
+        <br />
+        <i style="opacity: 0.3">Created on Android</i>
+        <br />
       </div>
       <div class="end">
         <h2 class="c3f9">Contact</h2>

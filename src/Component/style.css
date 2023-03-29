@@ -140,20 +140,25 @@ iframe{
 .imgo {
   width: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
 .end {
   background: #235;
   color: #fff;
   padding: 40px 30px;
-  
   font-family: "Syne", sans-serif;
 }
 @media only screen and (min-width: 800px){
-  #box{
-    padding: 60px 80px;
+  .box{
+    padding: 40px 80px;
   }
-  #end{
-    padding: 60px 80px;
+  .end{
+    padding: 40px 80px;
+  }
+  .card{
+    width: 40%;
+    display: inline-table;
+    margin: 16px;
   }
 }
