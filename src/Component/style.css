@@ -156,9 +156,11 @@ iframe{
   .end{
     padding: 40px 80px;
   }
-  .card{
+  .card {
     width: 40%;
-    display: inline-table;
-    margin: 16px;
+    display: inline-block;
+    margin: 0 2% 40px 2%;
+    height: 350px;
+    vertical-align: bottom;
   }
 }

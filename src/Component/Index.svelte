@@ -57,13 +57,12 @@ src="https://youtube.com/embed/_J7HDoxADis">
             <img class="imgc" src="https://images2.imgbox.com/c5/24/h5Z2Ghe2_o.png" load="lazy">
             <h3>Create a Minecraft Server and Plugin</h3>
             <p>Minecraft server with theme of MMORPG. I compile plugin myself on Eclipse and then I named it "Raveling". This is where I start learning programming Java</p>
-            <a href="https://github.com/Nbrthx/raveling"><button class="btn">Github Raveling</button></a>
             <a href="https://www.spigotmc.org/resources/raveling-mmorpg-plugin.94929/"><button class="btn">Spigot Raveling</button></a>
           </div>
           <div class="card">
             <img class="imgc" src="https://images2.imgbox.com/6f/e8/IFZJF7Ti_o.png" load="lazy">
             <h3>Create a Little Bot Discord</h3>
-            <p>Bot discord that can auto reply a messeges. Available rules agrements with emotes and connect to my plugin, so i can do a comment from discord. But i dont have code of it.</p>
+            <p>Bot discord that can auto reply a messeges. Available rules agrements with emotes and connect to my minecraft plugin, so i can do a comment from discord. But i dont have code of it.</p>
           </div>
           <div class="card">
             <img class="imgc" src="https://images2.imgbox.com/0b/e0/ZjDPf02M_o.png" load="lazy">
