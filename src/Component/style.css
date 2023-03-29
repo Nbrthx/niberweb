@@ -8,11 +8,11 @@
   right: 0;
 }
 body {}
-#header{
+.header{
   background: #3b8;
   box-shadow: 6px 4px 0px #4d9;
   border-radius: 8px;
-  position: fixed;
+  position: absolute;
   width: 100%-4px;
   left: 4px;
   top: 4px;
@@ -27,13 +27,13 @@ body {}
   font-weight: bold;
   margin-left: 24px;
 }
-#content{
-  background: #fff;
+.content{
+  background: #def;
   position: relative;
   z-index: 1;
 }
 h1{
-  font-size: 8vw;
+  font-size: 36pt;
   font-family: "Lalezar",sans-serif;
   margin-bottom: 8px;
   /*text-shadow: 2px 1px 0px #ca2;*/
@@ -41,7 +41,7 @@ h1{
 h2 {
   font-family: "Lalezar", sans-serif;
   margin-bottom: 8px;
-  font-size: 32px;
+  font-size: 34px;
   /*text-shadow: 2px 1px 0px #ca2;*/
 }
 .cw{
@@ -57,7 +57,7 @@ h2 {
   text-align: center;
 }
 a{
-  color: #ef4;
+  color: #9b0;
   text-decoration: none;
 }
 a:hover,a:focus{
@@ -74,36 +74,49 @@ a:hover,a:focus{
   border: none;
   border-radius: 12px;
   font-size: 20px;
-  margin: 20px 0px;
+  margin: 20px 0 0 0;
 }
 .btn:hover,.btn:focus{
   background: #4d9;
 }
 #pp{
-  background-image: url("https://iili.io/HhcGLLN.png");
-  background-size: 100px;
-  background-position: 0 -144px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: 0 0px;
+  border-radius: 75px;
   display: block;
-  margin: 0 auto;
+  margin: 16px auto;
 }
-#ctext{
+.ctext{
   font-style: italic;
   text-align: center;
   margin-top: 30px;
 }
-#box{
+.box{
   padding: 40px 30px;
   font-family: "Syne",sans-serif;
 }
-#box-head {
-  padding: 36vh 30px;
-  height: 28vh;
+.box-head {
+  padding: 30vh 30px;
+  height: 40vh;
   font-family: "Syne", sans-serif;
   background: #235;
   color: #fff;
+}
+.card{
+  background: #fff;
+  padding: 20px 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px #46a;
+  margin-bottom: 40px;
+}
+.box-list{
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
 hr{
   background: #4d9;
@@ -112,18 +125,35 @@ hr{
   border: none;
   margin: 0 0;
 }
-#end {
+iframe{
+  border: none;
+  width: calc(100% + 40px);
+  height: 170px;
+  margin: -20px -20px 20px -20px;
+}
+.imgc{
+  width: calc(100% + 40px);
+  margin: -20px -20px 20px -20px;
+  height: 170px;
+  object-fit: cover;
+}
+.imgo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.end {
   background: #235;
   color: #fff;
   padding: 40px 30px;
-  margin-top: 60px;
+  
   font-family: "Syne", sans-serif;
 }
 @media only screen and (min-width: 800px){
   #box{
-    padding: 40px 80px;
+    padding: 60px 80px;
   }
   #end{
-    padding: 40px 80px;
+    padding: 60px 80px;
   }
 }
