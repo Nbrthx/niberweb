@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Niberweb</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+  
+	<script type="module">
+	  import Router from "./router.js"
+	
+	  var routes = {
+	    "/": "views/home.html"
+	  }
+	
+	  const route = new Router(document.body, routes)
+	  route.route()
+	</script>
+</head>
+<body>
+  
+</body>
+</html>

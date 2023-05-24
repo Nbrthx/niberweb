@@ -13,7 +13,7 @@ const pool = new Pool({
 
 var count = 0
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'src')))
 
 app.get('/api/addcount', (req, res) => {
   pool.query('UPDATE counter SET count=count+1 where id=1')
@@ -24,8 +24,9 @@ app.get("/api/getcount", (req, res) => {
     res.json({ count: count })
   })
 });
+
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname,"public/index.html"))
+    res.sendFile(path.join(__dirname,"src/index.html"))
 })
 
 app.listen(port, () => {
