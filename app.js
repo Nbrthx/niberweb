@@ -11,8 +11,6 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false }
 });
 
-var count = 0
-
 app.use(express.static(path.join(__dirname, 'src')))
 
 app.get('/api/addcount', (req, res) => {
@@ -20,7 +18,7 @@ app.get('/api/addcount', (req, res) => {
 })
 app.get("/api/getcount", (req, res) => {
   pool.query("SELECT count FROM counter WHERE id=1", (err, row) => {
-    count = row.rows[0].count
+    var count = row.rows[0].count
     res.json({ count: count })
   })
 });
