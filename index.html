@@ -18,6 +18,7 @@
 
     <!-- Stylesheet -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Outfit&display=swap" rel="stylesheet">
     <style>
         /* Reset dan variabel warna */
         :root {
@@ -45,10 +46,7 @@
             color: var(--text);
             line-height: 1.6;
             font-family: 'Silkscreen', cursive;
-            /* background-image: 
-                linear-gradient(rgba(32, 201, 151, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(32, 201, 151, 0.05) 1px, transparent 1px); */
-            background-size: 20px 20px;
+            overflow-x: hidden;
         }
         
         h1, h2, h3, h4, .btn, .logo {
@@ -71,6 +69,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
+            overflow-x: hidden;
         }
         
         nav {
@@ -113,7 +112,7 @@
         /* Hero Section */
         .hero {
             padding: 5rem 0;
-			padding-bottom: 16rem;
+			padding-bottom: 18rem;
             text-align: center;
             background-color: white;
             border-bottom: var(--pixel-border) solid var(--dark);
@@ -165,6 +164,7 @@
             position: relative;
             top: 0;
             left: 0;
+            margin-bottom: 8px;
         }
         
         .btn:hover {
@@ -446,7 +446,7 @@
             font-weight: 700;
             margin-bottom: 0.5rem;
 			color: var(--primary);
-            text-shadow: 4px 4px 0 var(--primary-light);
+            text-shadow: 2px 2px 0 var(--primary-light);
         }
         
         .footer-links {
@@ -591,11 +591,11 @@
             <nav>
                 <a href="#" class="logo">Niberthix</a>
                 <ul class="nav-links">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -605,20 +605,21 @@
     <section class="hero" id="home">
         <div class="container">
             <h1>HI, I'M A <span class="highlight">WEB DEVELOPER</span> & <span class="highlight">PIXEL ARTIST</span></h1>
-            <p>I create pixel art, games, and interactive web experiences. passionate about retro aesthetics and modern technologies.</p>
-            <a href="#projects" class="btn">VIEW MY WORK</a>
+            <p>I create pixel art, games, and interactive web experiences. Passionate about retro aesthetics and modern technologies.</p>
+            <a href="#projects" class="btn">VIEW MY WORK</a><br />
+            <button id="changefont" class="btn">CHANGE FONT</button>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">ABOUT ME</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>HELLOW! I'M A PASSIONATE WEB DEVELOPER (ESPECIALLY FOR GAMES) AND PIXEL ARTIST WITH A LOVE FOR GAMES AND MODERN WEB TECHNOLOGIES. I STARTED MY JOURNEY IN PROGRAMMING AT A YOUNG AGE AND HAVE BEEN CONTINUOUSLY LEARNING AND EVOLVING EVER SINCE.</p>
-                    <p>MY FOCUS IS ON DEVELOPING ONLINE GAMES AND EXPLORING DECENTRALIZED TECHNOLOGIES FOR FUTURE LARGE-SCALE PROJECTS. I'M ALWAYS LOOKING FOR OPPORTUNITIES TO COLLABORATE WITH CREATIVE INDIVIDUALS, ESPECIALLY PIXEL ARTISTS AND OTHER DEVELOPERS.</p>
-                    <p>WHEN I'M NOT CODING OR CREATING PIXEL ART, YOU CAN FIND ME PLAYING GAMES, READING BOOK, WATCHING MOVIE OR STUDYING GAME DESIGN AND THE OTHER THING THAT CORELATED TO GAMES.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp; Hellow! I'm a passionate web developer (especially for games) and pixel artist with a love for games and modern web technologies. I started my journey in programming at a young age and have been continuously learning and evolving ever since.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp; My focus is on developing online games and exploring decentralized technologies for future large-scale projects. I'm always looking for opportunities to collaborate with creative individuals, especially pixel artists and other developers.</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp; When I'm not coding or creating pixel art, you can find me playing games, reading books, watching movies, or studying game design and other things that are correlated to games.</p>
                 </div>
                 <div class="about-image">
                     <div class="pixel-art-container">
@@ -628,7 +629,7 @@
                         <div class="pixel-corner pixel-corner-bl"></div>
                         <div class="pixel-corner pixel-corner-br"></div>
                     </div>
-					<p style="margin-top: 1rem;">NIBERTHIX</p>
+					<p style="margin-top: 1rem;">Niberthix</p>
                 </div>
             </div>
         </div>
@@ -637,49 +638,49 @@
     <!-- Skills Section -->
     <section class="section skills" id="skills">
         <div class="container">
-            <h2 class="section-title">SKILLS & TECHNOLOGIES</h2>
+            <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>WEB DESIGN</h3>
+                    <h3>Web Design</h3>
                     <ul class="skill-list">
                         <li>HTML5</li>
-                        <li>CSS3 & SASS</li>
-                        <li>TYPESCRIPT</li>
-                        <li>JAVASCRIPT</li>
-                        <li>MITHRIL.JS</li>
-                        <li>REACT.JS</li>
-                        <li>RESPONSIVE DESIGN</li>
+                        <li>CSS3 & Sass</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>Mithril.js</li>
+                        <li>React.js</li>
+                        <li>Responsive Design</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>WEB BACKEND</h3>
+                    <h3>Web Backend</h3>
                     <ul class="skill-list">
-                        <li>NODE.JS</li>
-                        <li>EXPRESS.JS</li>
-                        <li>SOCKET.IO</li>
-                        <li>ETHERS.JS</li>
-                        <li>RESTFUL APIS</li>
-                        <li>CRYPTOGRAPHY</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Socket.io</li>
+                        <li>Ethers.js</li>
+                        <li>RESTful APIs</li>
+                        <li>Cryptography</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>GAME DEVELOPMENT</h3>
+                    <h3>Game Development</h3>
                     <ul class="skill-list">
-                        <li>PHASER.JS</li>
-                        <li>GODOT ENGINE</li>
-                        <li>GDSCRIPT</li>
-                        <li>JAVA</li>
-                        <li>PIXEL ART</li>
+                        <li>Phaser.js</li>
+                        <li>Godot Engine</li>
+                        <li>GDScript</li>
+                        <li>Java</li>
+                        <li>Pixel Art</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>DATABASE & TOOLS</h3>
+                    <h3>Database & Tools</h3>
                     <ul class="skill-list">
-                        <li>MYSQL</li>
-                        <li>POSTGRESQL</li>
-                        <li>GIT & GITHUB</li>
-                        <li>VS CODE</li>
-                        <li>ASPRITE</li>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>Git & Github</li>
+                        <li>VS Code</li>
+                        <li>Aseprite</li>
                     </ul>
                 </div>
             </div>
@@ -689,14 +690,14 @@
     <!-- Projects Section -->
     <section class="section" id="projects">
         <div class="container">
-            <h2 class="section-title">MY PROJECTS</h2>
+            <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img">CLOUD STORAGE<br />(SCREENSHOT UNAVAILABLE)</div>
+                    <div class="project-img">Cloud Storage<br />(Screenshot Unavailable)</div>
                     <div class="project-content">
-                        <h3>CLOUD STORAGE APPLICATION</h3>
-						<p>19 April 2020</p>
-                        <p>A GOOGLE DRIVE-LIKE CLOUD STORAGE APPLICATION BUILT WITH PHP AND USER AUTHENTICATION. BUT I LOST THE PROJECT CODE BEFORE I KNOW GITHUB.</p>
+                        <h3>Cloud Storage Application</h3>
+						<p>19 APRIL 2020</p>
+                        <p>A Google Drive-like cloud storage application built with PHP and user authentication. But I lost the project code before I knew GitHub.</p>
                         <div class="project-tags">
                             <span class="tag">PHP</span>
                             <span class="tag">MYSQL</span>
@@ -710,9 +711,9 @@
 						<img src="/raveling.png" alt="Raveling" style="width:100%; height:100%; object-fit:cover;">
 					</div>
                     <div class="project-content">
-                        <h3>RAVELING, PLUGIN FOR MINECRAFT SERVER</h3>
+                        <h3>Raveling, Plugin for Minecraft Server</h3>
 						<p>2 AUGUST 2021</p>
-                        <p>BUILD YOUR OWN MMORPG SERVER WITH RAVELING PLUGIN. BUT IT'S HAS BEEN LONG TIME NOT TOUCHED.</p>
+                        <p>Build your own MMORPG server with Raveling plugin. But it's has been a long time since I touched it.</p>
                         <div class="project-tags">
                             <span class="tag">JAVA</span>
                         </div>
@@ -724,9 +725,9 @@
 						<img src="/chatapp.jpg" alt="Chat Application" style="width:100%; height:100%; object-fit:cover;">
 					</div>
                     <div class="project-content">
-                        <h3>ENCRYPTED CHAT APPLICATION</h3>
+                        <h3>Encrypted Chat Application</h3>
 						<p>10 APRIL 2022</p>
-                        <p>TRY TO MAKE A SECURE MESSAGING APPLICATION THAT IMPLEMENTING ASYMMETRIC CRYPTOGRAPHY FOR PRIVATE COMMUNICATIONS.</p>
+                        <p>An attempt to make a secure messaging application that implements asymmetric cryptography for private communications.</p>
                         <div class="project-tags">
                             <span class="tag">WEBSOCKET</span>
                             <span class="tag">NODE.JS</span>
@@ -743,9 +744,9 @@
 						style="width: 100%; height: 100%;" allowfullscreen></iframe>
 					</div>
                     <div class="project-content">
-                        <h3>WATER CONSERVATION RPG</h3>
+                        <h3>Water Conservation RPG</h3>
 						<p>19 MARCH 2024</p>
-                        <p>AN EDUCATIONAL RPG GAME FOCUSED ON TEACHING WATER CONSERVATION PRINCIPLES THROUGH ENGAGING GAMEPLAY.</p>
+                        <p>An educational RPG game focused on teaching water conservation principles through engaging gameplay.</p>
                         <div class="project-tags">
                             <span class="tag">GODOT ENGINE</span>
                             <span class="tag">GAME DESIGN</span>
@@ -762,9 +763,9 @@
 						style="width: 100%; height: 100%;" allowfullscreen></iframe>
 					</div>
                     <div class="project-content">
-                        <h3>MEDALIST IN RESEARCH COMPETITION WITH GAME</h3>
+                        <h3>Medalist in Research Competition with Game</h3>
 						<p>8 NOVEMBER 2024</p>
-                        <p>DEVELOP AN EDUCATIONAL MMORPG GAME FOCUSED ON REVITALIZATION AND PRESERVATION OF "PITUTUR LUHUR" JAVANESE PRINCIPLES THROUGH ENGAGING GAMEPLAY.</p>
+                        <p>Developed an educational MMORPG game focused on the revitalization and preservation of "Pitutur Luhur" Javanese principles through engaging gameplay.</p>
                         <div class="project-tags">
 							<span class="tag">PHASER.JS</span>
                             <span class="tag">SOCKET.IO</span>
@@ -781,9 +782,9 @@
 						<img src="/ss-divine-quest.png" alt="Raveling" style="width:100%; height:100%; object-fit:cover;">
 					</div>
                     <div class="project-content">
-                        <h3>MAKE ONLINE CARD COLLECTION GAME</h3>
+                        <h3>Online Card Collection Game</h3>
 						<p>2 DECEMBER 2024</p>
-                        <p>WITH BIBLE THEME, COLLECT YOUR CARD AND PVP TO CLIMB THE LEADERBOARD.</p>
+                        <p>With a Bible theme, collect your cards and engage in PVP to climb the leaderboard.</p>
                         <div class="project-tags">
                             <span class="tag">PHASER.JS</span>
                             <span class="tag">SOCKET.IO</span>
@@ -802,9 +803,9 @@
 						style="width: 100%; height: 100%;" allowfullscreen></iframe>
 					</div>
                     <div class="project-content">
-                        <h3>BUILD STORY HEAVY MMORPG AND WHOLE ECOSYSTEM</h3>
+                        <h3>Story-Heavy MMORPG and Ecosystem</h3>
 						<p>1 MAY 2025</p>
-                        <p>WANNA HEAR MY STORY? I WILL TELLING ALL STORY FROM MY HEAD, MY IDEA, MY EXPERIENCES AND MY JOURNEY INTO THIS GAME. IT'S MY ULTIMATE PROJECT.</p>
+                        <p>Wanna hear my story? I will be telling all the stories from my head, my ideas, my experiences, and my journey into this game. It's my ultimate project.</p>
                         <div class="project-tags">
                             <span class="tag">PHASER.JS</span>
                             <span class="tag">PLANCK.JS</span>
@@ -821,9 +822,9 @@
 						<img src="/physics-simulation.png" alt="Physics Simulation" style="width:100%; height:100%; object-fit:cover;">
 					</div>
                     <div class="project-content">
-                        <h3>PHYSICS SIMULATION OF FRICTIONAL FORCE</h3>
+                        <h3>Physics Simulation of Frictional Force</h3>
 						<p>22 JUNE 2025</p>
-                        <p>AN INTERACTIVE LEARNING MEDIA ABOUT PHYSICS. SIMULATE THE PHYSICS OF FRICTIONAL FORCE.</p>
+                        <p>An interactive learning media about physics. Simulating the physics of frictional force.</p>
                         <div class="project-tags">
                             <span class="tag">PHASER.JS</span>
                             <span class="tag">PLANCK.JS</span>
@@ -843,9 +844,9 @@
     <!-- Gallery Section -->
    <section class="section gallery" id="gallery">
         <div class="container">
-            <h2 class="section-title">ART GALLERY</h2>
+            <h2 class="section-title">Art Gallery</h2>
 			<p class="gallery-title">
-				- SELF TOUGH / ORIGINAL CHARACTER PIXEL ART
+				- Self Taught / Original Character Pixel Art
 			</p>
             <div class="gallery-grid">
                 <div class="gallery-card">
@@ -865,7 +866,7 @@
                 </div>
 			</div>
 			<p class="gallery-title">
-				- FAN ART PIXEL
+				- Pixel Fan Art
 			</p>
 			<div class="gallery-grid">				
 				<div class="gallery-card">
@@ -885,7 +886,7 @@
 				</div>
 			</div>
 			<p class="gallery-title">
-				- OTHERS 
+				- Others 
 			</p>
 			<div class="gallery-grid">
 				<div class="gallery-card">
@@ -893,7 +894,7 @@
 				</div>
             </div>
 			<p class="gallery-title">
-				- NON PIXEL ART
+				- Non Pixel Art
 			</p>
 			<a href="https://instagram.com/nbrthx" target="_blank" class="btn" rel="noopener noreferrer">VISIT INSTAGRAM</a>
         </div>
@@ -904,10 +905,10 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <div class="footer-logo">Niberthix</div>
+                    <div class="footer-logo">NIBERTHIX</div>
                     <p>
-						CREATING DIGITAL EXPERIENCES WITH CODE AND ART.<br />
-						OFFICIAL DOMAIN IS <a href="https://nbrthx.my.id" target="_blank" rel="noopener noreferrer">nbrthx.my.id</a> AND
+						Creating digital experiences with code and art.<br />
+						Official domain is <a href="https://nbrthx.my.id" target="_blank" rel="noopener noreferrer">nbrthx.my.id</a> &
 						<a href="https://nbrthx.neocities.org" target="_blank" rel="noopener noreferrer">nbrthx.neocities.org</a>.<br />
 					</p>
 					<br /><br />
@@ -916,25 +917,25 @@
                     <div class="footer-links-column">
                         <h4>QUICK LINKS</h4>
                         <ul>
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#skills">SKILLS</a></li>
-                            <li><a href="#projects">PROJECTS</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
                         </ul>
                     </div>
                     <div class="footer-links-column">
                         <h4>RESOURCES</h4>
                         <ul>
-                            <li><a href="#">BLOG (IN FUTURE)</a></li>
+                            <li><a href="#">Blog (in future)</a></li>
                         </ul>
                     </div>
                     <div class="footer-links-column">
                         <h4>CONNECT</h4>
                         <ul>
-                            <li><a href="https://github.com/Nbrthx">GITHUB</a></li>
-                            <li><a href="https://youtube.com/@nbrthx">YOUTUBE</a></li>
-                            <li><a href="https://www.tumblr.com/nbrthx">TUMBLR</a></li>
-                            <li><a href="https://nbrth.itch.io">ITCH.IO</a></li>
+                            <li><a href="https://github.com/Nbrthx">Github</a></li>
+                            <li><a href="https://youtube.com/@nbrthx">Youtube</a></li>
+                            <li><a href="https://www.tumblr.com/nbrthx">Tumblr</a></li>
+                            <li><a href="https://nbrth.itch.io">itch.io</a></li>
                         </ul>
                     </div>
                 </div>
@@ -972,6 +973,38 @@
                 pixel.className = `pixel-corner pixel-corner-${corner}`;
                 card.appendChild(pixel);
             });
+        });
+
+        let pixelfont = true
+
+        const changefont = document.getElementById('changefont');
+        changefont.addEventListener('click', function() {
+            pixelfont = !pixelfont;
+            console.log('Hello')
+
+            document.body.style.fontFamily = pixelfont ? '"Silkscreen", cursive' : '"Outfit", sans-serif';
+            for(let i = 0; i < document.getElementsByTagName('h1').length; i++) {
+                document.getElementsByTagName('h1')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+            for(let i = 0; i < document.getElementsByTagName('h2').length; i++) {
+                document.getElementsByTagName('h2')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+            for(let i = 0; i < document.getElementsByTagName('h3').length; i++) {
+                document.getElementsByTagName('h3')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+            for(let i = 0; i < document.getElementsByTagName('h4').length; i++) {
+                document.getElementsByTagName('h4')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+            for(let i = 0; i < document.getElementsByClassName('btn').length; i++) {
+                document.getElementsByClassName('btn')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+            for(let i = 0; i < document.getElementsByClassName('logo').length; i++) {
+                document.getElementsByClassName('logo')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+            for(let i = 0; i < document.getElementsByClassName('gallery-title').length; i++) {
+                document.getElementsByClassName('gallery-title')[i].style.fontFamily = pixelfont ? '"Press Start 2P", cursive' : '"Madimi One", sans-serif';
+            }
+
         });
     </script>
 </body>
