@@ -22,45 +22,45 @@ interface GalleryCategory {
 export const AppState = {
   pixelFont: true,
   
-  toggleFont() {
-    this.pixelFont = !this.pixelFont;
-    this.applyFontChanges();
+  toggleFont: () => {
+    AppState.pixelFont = !AppState.pixelFont;
+    AppState.applyFontChanges();
     m.redraw();
   },
   
-  applyFontChanges() {
-    const headFont = this.pixelFont ? '"pixel body", cursive' : '"Outfit", sans-serif';
-    const bodyFont = this.pixelFont ? '"pixel header", cursive' : '"Madimi One", sans-serif';
+  applyFontChanges: () =>  {
+    const bodyFont = AppState.pixelFont ? '"pixel body", cursive' : '"Outfit", sans-serif';
+    const headFont = AppState.pixelFont ? '"pixel header", cursive' : '"Madimi One", sans-serif';
     // Apply font changes to match original HTML behavior
-    document.body.style.fontFamily = headFont;
+    document.body.style.fontFamily = bodyFont;
     
     // Update all heading tags
     for(let i = 0; i < document.getElementsByTagName('h1').length; i++) {
-      (document.getElementsByTagName('h1')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByTagName('h1')[i] as HTMLElement).style.fontFamily = headFont
     }
     for(let i = 0; i < document.getElementsByTagName('h2').length; i++) {
-      (document.getElementsByTagName('h2')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByTagName('h2')[i] as HTMLElement).style.fontFamily = headFont
     }
     for(let i = 0; i < document.getElementsByTagName('h3').length; i++) {
-      (document.getElementsByTagName('h3')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByTagName('h3')[i] as HTMLElement).style.fontFamily = headFont
     }
     for(let i = 0; i < document.getElementsByTagName('h4').length; i++) {
-      (document.getElementsByTagName('h4')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByTagName('h4')[i] as HTMLElement).style.fontFamily = headFont
     }
     
     // Update buttons
     for(let i = 0; i < document.getElementsByClassName('btn').length; i++) {
-      (document.getElementsByClassName('btn')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByClassName('btn')[i] as HTMLElement).style.fontFamily = headFont
     }
     
     // Update logo
     for(let i = 0; i < document.getElementsByClassName('logo').length; i++) {
-      (document.getElementsByClassName('logo')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByClassName('logo')[i] as HTMLElement).style.fontFamily = headFont
     }
     
     // Update gallery titles
     for(let i = 0; i < document.getElementsByClassName('gallery-title').length; i++) {
-      (document.getElementsByClassName('gallery-title')[i] as HTMLElement).style.fontFamily = bodyFont
+      (document.getElementsByClassName('gallery-title')[i] as HTMLElement).style.fontFamily = headFont
     }
   },
   
@@ -390,7 +390,7 @@ const Gallery: m.Component = {
 
 // Main App Component
 export const Home: m.Component = {
-  oncreate() {
+    oncreate() {
     // Apply initial font settings
     AppState.applyFontChanges();
     
@@ -405,7 +405,7 @@ export const Home: m.Component = {
           card.appendChild(pixel);
         });
       });
-    }, 0);
+    }, 100);
   },
 
   view() {
