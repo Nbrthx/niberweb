@@ -1,5 +1,4 @@
 import m from "mithril";
-import { AppState } from "../pages/Home";
 
 export const Footer: m.Component = {
     view() {
@@ -48,8 +47,7 @@ export const Footer: m.Component = {
                                 quickLinks.map(link =>
                                     m('li',
                                         m('a', {
-                                            href: link.href,
-                                            onclick: (e: Event) => { e.preventDefault(); AppState.scrollToSection(link.href.substring(1)); }
+                                            href: link.href
                                         }, link.text)
                                     )
                                 )
