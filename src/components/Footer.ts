@@ -4,10 +4,10 @@ import { AppState } from "../pages/Home";
 export const Footer: m.Component = {
     view() {
         const quickLinks = [
-            { text: 'Home', href: '#!/' },
-            { text: 'About', href: '#!/about' },
-            { text: 'Portfolio', href: '#!/portfolio' },
-            { text: 'Gallery', href: '#!/gallery' }
+            { text: 'Home', href: '/#!/' },
+            { text: 'About', href: '/#!/about' },
+            { text: 'Portfolio', href: '/#!/portfolio' },
+            { text: 'Gallery', href: '/#!/gallery' }
         ];
 
         const resources = [
